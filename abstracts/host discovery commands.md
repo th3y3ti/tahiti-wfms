@@ -99,8 +99,10 @@ true_positives:
     full_event: 'CAR-2016-03-001-mordor-02.json'
 ---
 
-{page.title}
+###Title: {{page.title}}
 
-{{page.platforms[0]}}
-{{page.platforms[1]}}
-{{page.platforms[2]}}
+###Platforms
+
+####{{page.platforms[0]}}
+####{{page.platforms[1]}}
+####{{page.platforms[2]}}
