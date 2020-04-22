@@ -1,5 +1,5 @@
 ---
-title: Host Discovery Commandssss
+title: Host Discovery Commands
 submission_date: 2016/03/24
 information_domain: Host
 platforms:
@@ -99,10 +99,9 @@ true_positives:
     full_event: 'CAR-2016-03-001-mordor-02.json'
 ---
 
-<h3>Title: {{page.title}}</h3>
+<b>Title:</b>{{page.title}}
 
-<h3>Platforms:</h3>
-
-<h3>{{page.platforms[0]}}</h3>
-<h3>{{page.platforms[1]}}</h3>
-<h3>{{page.platforms[2]}}</h3>
+<b>Platforms:</b>
+<li>{{page.platforms[0]}}</li>
+<li>{{page.platforms[1]}}</li>
+<li>{{page.platforms[2]}}</li>
