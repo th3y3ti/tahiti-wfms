@@ -1,5 +1,4 @@
 ---
 title: Host Discovery Commands
 ---
-
-{title:}
+{page.title}
