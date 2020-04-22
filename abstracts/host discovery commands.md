@@ -1,3 +1,4 @@
+---
 title: Host Discovery Commandssss
 submission_date: 2016/03/24
 information_domain: Host
@@ -96,3 +97,8 @@ true_positives:
     description: 'Sysmon whoami.exe event from the Mordor [Empire Net Start dataset](https://github.com/hunters-forge/mordor/blob/master/small_datasets/windows/discovery/system_service_discovery_T1007/empire_net_start.md).'
     event_snippet: 'CAR-2016-03-001-mordor-02-snippet.json'
     full_event: 'CAR-2016-03-001-mordor-02.json'
+    ---
+
+{{page.title}}
+
+{{page.platforms}}
