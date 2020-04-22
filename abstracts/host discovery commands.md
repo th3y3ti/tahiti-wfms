@@ -109,5 +109,6 @@ true_positives:
 <ul>
 {% for item in page.platforms %}
 <li>{{item}}</li>
+<li>{{platforms}}</li
 {% endfor %}
 </ul>
