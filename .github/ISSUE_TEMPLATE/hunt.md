@@ -7,7 +7,7 @@ assignees: ''
 ---
 
 **Acceptance Criteria**  
-This issue is can be closed when the abstract has been updated and the report has been written. If the hunt can not be completed, this issue should be marked as blocked. If the issue is no longer needed, it should be labeled as such and then closed.
+This issue can be closed when the abstract has been updated and the report has been written. If the hunt can not be completed, this issue should be marked as blocked. If the issue is no longer needed, it should be labeled as such and then closed.
 
 **Tasks**
 - [ ] Validate Security Gap Still Exists
@@ -18,5 +18,6 @@ This issue is can be closed when the abstract has been updated and the report ha
 - [ ] Update the Playbooks
 - [ ] Write Report
 - [ ] Share Findings
+- [ ] Close Issue
 
 **Note:** Incidents should be escalated as they are found.
