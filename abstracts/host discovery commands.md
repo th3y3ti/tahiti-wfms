@@ -105,3 +105,9 @@ true_positives:
 <li>{{page.platforms[0]}}</li>
 <li>{{page.platforms[1]}}</li>
 <li>{{page.platforms[2]}}</li>
+
+<ul>
+{% for item in page.platforms %}
+<li>{{page.platforms}}</li>
+{% endfor %}
+</ul>
