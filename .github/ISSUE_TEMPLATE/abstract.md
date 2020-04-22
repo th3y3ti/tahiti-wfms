@@ -2,7 +2,7 @@
 name: Create/Modify Abstract
 about: For creating,updating or deleting an abstract
 title: Create/Modify Abstract <insert abstract name>
-labels: update abstract
+labels: abstract
 assignees: ''
 ---
 
