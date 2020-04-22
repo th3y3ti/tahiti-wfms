@@ -7,9 +7,9 @@ assignees: ''
 ---
 
 **Acceptance Criteria**  
-This issue is considered complete when the playbook has been updated and the report has been written. If the hunt can not be completed, the issue should be marked as blocked. If the issue is no longer needed, it should be deleted.
+This issue is can be closed when the abstract has been updated and the report has been written. If the hunt can not be completed, this issue should be marked as blocked. If the issue is no longer needed, it should be labeled as such and then closed.
 
-**Tasks***
+**Tasks**
 - [ ] Validate Security Gap Still Exists
 - [ ] Refine Hypothesis
 - [ ] Re-Validate Data Visibility / Usability 
@@ -19,4 +19,4 @@ This issue is considered complete when the playbook has been updated and the rep
 - [ ] Write Report
 - [ ] Share Findings
 
-Note: Incidents should be escalated as they are found.
+**Note:** Incidents should be escalated as they are found.
