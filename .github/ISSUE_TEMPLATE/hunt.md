@@ -1,7 +1,7 @@
 ---
 name: hunt
 about: for tracking the progress of a hunt
-title: Hunt for <name of playbook>
+title: Hunt for <insert name of abstract>
 labels: threat hunt
 assignees: ''
 ---
