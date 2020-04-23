@@ -11,10 +11,10 @@ status: initial
 Malicious users are avoiding detection and executing malicious scripts using encoded PowerShell scripts.
 
 ## Trigger
-Multiple Threat Intelligence sources indicate PowerShell as one of the most common methods of executing malware and bypassing security controls.
+Situational Awareness
 
 ## Reference
-
+Multiple Threat Intelligence sources indicate PowerShell as one of the most common methods of executing malware and bypassing security controls.
 
 ## Priority
 Priority of this abstract.
