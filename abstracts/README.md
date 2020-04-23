@@ -16,6 +16,7 @@ created date: xx/xx/20xx
 last ran: xx/xx/20xx
 technique: Txxxx
 status: initial
+priority: 1-5
 ---
 
 ## Hypothesis
@@ -27,7 +28,7 @@ What triggered the creation of this abstract?
 ## Reference
 Reference to the trigger.
 
-## Priority
+## Priority Explanation
 Priority of this abstract.
 
 ## MITRE Reference(s)
@@ -40,7 +41,7 @@ Any actors that use these techniques?
 ## Actor Campaign
 Is there an active campaign in which these techniques are used?
 
-## Actor Capability
+## Actor Capability with Explanation
 High, Medium, Low
 
 ## Classification
