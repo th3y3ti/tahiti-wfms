@@ -11,7 +11,7 @@ UUID's can be generated here (https://www.uuidgenerator.net/version4).
 ```
 ---
 uuid: 00000000-0000-0000-0000-000000000000
-created by: th3Y3ti
+created by: name
 created date: xx/xx/20xx
 last ran: xx/xx/20xx
 technique: Txxxx
@@ -32,7 +32,7 @@ Priority of this abstract.
 
 ## MITRE Reference(s)
 Reference (links) to attack techniques from MITRE ATT&CK.
-- https://attack.mitre.org/techniques/T1086/
+- https://attack.mitre.org/techniques/Txxxx/
 
 ## Possible Actors
 Any actors that use these techniques?
