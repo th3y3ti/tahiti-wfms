@@ -1,109 +1,43 @@
 ---
-title: Host Discovery Commands
-submission_date: 2016/03/24
-information_domain: Host
-platforms:
-  - Windows
-  - Linux
-  - macOS
-subtypes:
-  - Process
-analytic_types:
-  - TTP
-contributors:
-  - MITRE
-id: CAR-2016-03-001
-description: |-
-  When entering on a host for the first time, an adversary may try to [discover](https://attack.mitre.org/tactics/TA0007) information about the host. There are several built-in Windows commands that can be used to learn about the software configurations, active users, administrators, and networking configuration. These commands should be monitored to identify when an adversary is learning information about the system and environment. The information returned may impact choices an adversary can make when [establishing persistence](https://attack.mitre.org/tactics/TA0003), [escalating privileges](https://attack.mitre.org/tactics/TA0004), or [moving laterally](https://attack.mitre.org/tactics/TA0008).
-  Because these commands are built in, they may be run frequently by power users or even by normal users. Thus, an analytic looking at this information should have well-defined white- or blacklists, and should consider looking at an anomaly detection approach, so that this information can be learned dynamically.
-  Within the built-in Windows Commands:
-  -   `hostname`
-  -   `ipconfig`
-  -   `net`
-  -   `quser`
-  -   `qwinsta`
-  -   `sc` with flags `query`, `queryex`, `qc`
-  -   `systeminfo`
-  -   `tasklist`
-  -   `dsquery`
-  -   `whoami`
-  **Note** `dsquery` is only pre-existing on Windows servers.
-coverage:
-  - technique: T1087
-    tactics:
-      - TA0007
-    coverage: Moderate
-  - technique: T1069
-    tactics:
-      - TA0007
-    coverage: Moderate
-  - technique: T1016
-    tactics:
-      - TA0007
-    coverage: Moderate
-  - technique: T1082
-    tactics:
-      - TA0007
-    coverage: Moderate
-  - technique: T1033
-    tactics:
-      - TA0007
-    coverage: Moderate
-  - technique: T1057
-    tactics:
-      - TA0007
-    coverage: Moderate
-  - technique: T1007
-    tactics:
-      - TA0007
-    coverage: Moderate
-implementations:
-  - description: 'To be effective in deciphering malicious and benign activity, the full command line is essential. Similarly, having information about the parent process can help with making decisions and tuning to an environment.'
-    code: |-
-      process = search Process:Create
-      info_command = filter process where (
-       exe == "hostname.exe" or 
-       exe == "ipconfig.exe" or 
-       exe == "net.exe" or 
-       exe == "quser.exe" or 
-       exe == "qwinsta.exe" or
-       exe == "sc" and (command_line match " query" or command_line match " qc")) or
-       exe == "systeminfo.exe" or 
-       exe == "tasklist.exe" or 
-       exe == "whoami.exe"
-      )
-      output info_command
-    type: pseudocode
-  - description: Splunk version of the above pseudocode search.
-    code: |-
-      index=__your_sysmon_index__ EventCode=1 (Image="C:\\Windows\\*\\hostname.exe" OR Image="C:\\Windows\\*\\ipconfig.exe" OR Image="C:\\Windows\\*\\net.exe" OR Image="C:\\Windows\\*\\quser.exe" OR Image="C:\\Windows\\*\\qwinsta.exe" OR (Image="C:\\Windows\\*\\sc.exe" AND (CommandLine="* query *" OR CommandLine="* qc *")) OR Image="C:\\Windows\\*\\systeminfo.exe" OR Image="C:\\Windows\\*\\tasklist.exe" OR Image="C:\\Windows\\*\\whoami.exe")|stats values(Image) as "Images" values(CommandLine) as "Command Lines" by ComputerName
-    type: Splunk
-    data_mode: Sysmon native
-  - description: EQL version of the above pseudocode search.
-    code: |-
-      process where subtype.create and
-        (process_name == "hostname.exe" or process_name == "ipconfig.exe" or process_name == "net.exe" or process_name == "quser.exe" process_name == "qwinsta.exe" or process_name == "systeminfo.exe" or process_name == "tasklist.exe" or process_name == "whoami.exe" or (process_name == "sc.exe" and (command_line == "* query *" or command_line == "* qc *")))
-    type: EQL
-    data_mode: EQL native
-data_model_references:
-  - process/create/command_line
-  - process/create/exe
-true_positives:
-  - source: 'Mordor (Sysmon) - net.exe'
-    description: 'Sysmon net.exe event from the Mordor [Empire Net Start dataset](https://github.com/hunters-forge/mordor/blob/master/small_datasets/windows/discovery/system_service_discovery_T1007/empire_net_start.md).'
-    event_snippet: 'CAR-2016-03-001-mordor-01-snippet.json'
-    full_event: 'CAR-2016-03-001-mordor-01.json'
-  - source: 'Mordor (Sysmon) - whoami.exe'
-    description: 'Sysmon whoami.exe event from the Mordor [Empire Net Start dataset](https://github.com/hunters-forge/mordor/blob/master/small_datasets/windows/discovery/system_service_discovery_T1007/empire_net_start.md).'
-    event_snippet: 'CAR-2016-03-001-mordor-02-snippet.json'
-    full_event: 'CAR-2016-03-001-mordor-02.json'
+uuid: 65104859-6d74-42a9-8bed-94912dcd8ed5
+created by: th3y3ti
+created date: 04/01/2020
+last ran: N/A
+classification: exploitation
+status: initial
+priority: 2
 ---
 
-<b>Title: </b>{{page.title}}
+## Hypothesis
+- Adversaries are gaining knowledge about the environment by running "host discovery commands" on the host.
 
-<b>Platforms:</b>
-<ul>
-{% for item in page.platforms %}
-<li>{{item}}</li>
-{% endfor %}
-</ul>
+## Trigger
+- Situational Awareness
+
+## Reference
+- No Trigger. This hunt is based on one documented in MITRE's Cyber Analytic Repository (CAR)
+- https://car.mitre.org/analytics/CAR-2016-03-001/
+
+## Priority Explanation
+This abstract produces a lot of noise but the technique is very common.
+
+## MITRE Reference(s)
+- https://attack.mitre.org/techniques/T1087/
+- https://attack.mitre.org/techniques/T1069/
+- https://attack.mitre.org/techniques/T1016/
+- https://attack.mitre.org/techniques/T1082/
+- https://attack.mitre.org/techniques/T1033/
+- https://attack.mitre.org/techniques/T1057/
+- https://attack.mitre.org/techniques/T1007/
+
+## Possible Actors
+Discovery using host discovery commands is fairly common amongst several actors.
+
+## Actor Campaign
+Discovery using host discovery commands is fairly common amongst several actors.
+
+## Actor Capability with Explanation
+Medium - Running these commands would require first gaining access to a host. Afterword, these commands are trivial to run and require only user level permissions.
+
+## Estimated Resources
+Host commands are used regularly but system admins and even standard users. This hunt should be time restricted to 2 days or else it could take a very long time.
