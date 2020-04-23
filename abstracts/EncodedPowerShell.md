@@ -5,6 +5,7 @@ created date: 04/01/2020
 last ran: 04/11/2020
 technique: T1086
 status: initial
+priority: 3
 ---
 
 ## Hypothesis
@@ -16,7 +17,7 @@ Situational Awareness
 ## Reference
 Multiple Threat Intelligence sources indicate PowerShell as one of the most common methods of executing malware and bypassing security controls.
 
-## Priority
+## Priority Explanation
 Medium
 
 ## MITRE Reference(s)
@@ -30,7 +31,7 @@ Numerous actors
 Numerous campaigns
 
 ## Actor Capability
-Medium
+Medium - PowerShell is well documented with numerous sites explaining how to use it for pentesting. Most threat actors will have little problem applying this technique if they gain access to the internal network (interactive or through a delivered payload).
 
 ## Classification
 Execution
