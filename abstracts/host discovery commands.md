@@ -9,13 +9,13 @@ priority: 2
 ---
 
 ## Hypothesis
-- Adversaries are gaining knowledge about the environment by running "host discovery commands" on the host.
+Adversaries are gaining knowledge about the environment by running "host discovery commands" on the host.
 
 ## Trigger
 - Situational Awareness
 
 ## Reference
-- No Trigger. This hunt is based on one documented in MITRE's Cyber Analytic Repository (CAR)
+No Trigger. This hunt is based on one documented in MITRE's Cyber Analytic Repository (CAR)
 - https://car.mitre.org/analytics/CAR-2016-03-001/
 
 ## Priority Explanation
@@ -37,7 +37,8 @@ Discovery using host discovery commands is fairly common amongst several actors.
 Discovery using host discovery commands is fairly common amongst several actors.
 
 ## Actor Capability with Explanation
-Medium - Running these commands would require first gaining access to a host. Afterword, these commands are trivial to run and require only user level permissions.
+Medium 
+- Running these commands would require first gaining access to a host. Afterword, these commands are trivial to run and require only user level permissions.
 
 ## Estimated Resources
 Host commands are used regularly but system admins and even standard users. This hunt should be time restricted to 2 days or else it could take a very long time.
