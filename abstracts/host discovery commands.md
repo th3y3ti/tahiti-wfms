@@ -12,7 +12,7 @@ priority: 2
 Adversaries are gaining knowledge about the environment by running "host discovery commands" on the host.
 
 ## Trigger
-- Situational Awareness
+Situational Awareness
 
 ## Reference
 No Trigger. This hunt is based on one documented in MITRE's Cyber Analytic Repository (CAR)
