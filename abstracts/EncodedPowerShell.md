@@ -17,7 +17,7 @@ Situational Awareness
 Multiple Threat Intelligence sources indicate PowerShell as one of the most common methods of executing malware and bypassing security controls.
 
 ## Priority
-Priority of this abstract.
+Medium
 
 ## MITRE Reference(s)
 Reference (links) to attack techniques from MITRE ATT&CK.
