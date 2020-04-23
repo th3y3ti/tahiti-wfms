@@ -14,7 +14,7 @@ uuid: 00000000-0000-0000-0000-000000000000
 created by: name
 created date: xx/xx/20xx
 last ran: xx/xx/20xx
-technique: Txxxx
+classification: kill chain phase
 status: initial
 priority: 1-5
 ---
@@ -43,9 +43,6 @@ Is there an active campaign in which these techniques are used?
 
 ## Actor Capability with Explanation
 High, Medium, Low
-
-## Classification
-Step in the cyber kill chain
 
 ## Estimated Resources
 Rough estimation of the time and resources required (to execute this hunt)
