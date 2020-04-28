@@ -1,6 +1,5 @@
-### Current Abstracts
-
-[Encoded PowerShell](EncodedPowerShell.md)
+## Playbooks Repo
+This directory is for storing Threat Hunting playbooks. Threat Hunting playbooks are basically the recipes for conducting Threat Hunts.
 
 ### Instructions for creating a new abstract
 
