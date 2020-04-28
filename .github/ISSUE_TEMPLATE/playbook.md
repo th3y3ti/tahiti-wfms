@@ -1,8 +1,8 @@
 ---
-name: Create/Modify Abstract
-about: For creating,updating or deleting an abstract
-title: Create/Modify Abstract <insert abstract name>
-labels: abstract
+name: Create/Modify Playbook
+about: For creating,updating or deleting a playbook
+title: Create/Modify <insert playbook name>
+labels: playbook
 assignees: ''
 ---
 
