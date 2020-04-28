@@ -3,7 +3,7 @@
 Copy this report template, create a new file in the reports directory and save it.
 ```
 ---
-Abstract UUID: 00000000-0000-0000-0000-000000000000
+Playbook UUID: 00000000-0000-0000-0000-000000000000
 Date: xx/xx/20xx
 Incidents: 0
 Countermeasures: 0
