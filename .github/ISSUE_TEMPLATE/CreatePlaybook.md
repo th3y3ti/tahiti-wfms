@@ -11,6 +11,6 @@ This issue can be closed when the playbook has been updated and the Merge Reques
 
 **Tasks**
 - [ ] Create New Branch
-- [ ] Create/Update/Delete the Abstract
+- [ ] Create New Playbook in Playbooks Directory
 - [ ] Create Merge Request
 - [ ] Close Issue
