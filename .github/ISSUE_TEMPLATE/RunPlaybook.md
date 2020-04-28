@@ -1,13 +1,13 @@
 ---
-name: hunt
+name: 
 about: for tracking the progress of a hunt
-title: Hunt for <insert name of abstract>
-labels: threat hunt
+title: Execute <playbook name>
+labels: run playbook
 assignees: ''
 ---
 
 **Acceptance Criteria**  
-This issue can be closed when the abstract has been updated and the report has been written. If the hunt can not be completed, this issue should be marked as blocked. If the issue is no longer needed, it should be labeled as such and then closed.
+This issue can be closed when the playbook has been updated and the report has been written. If the hunt can not be completed, this issue should be marked as blocked. If the issue is no longer needed, it should be labeled as such and then closed.
 
 **Tasks**
 - [ ] Validate Security Gap Still Exists
