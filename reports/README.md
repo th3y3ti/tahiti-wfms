@@ -12,7 +12,7 @@ Recommendations: 0
 
 # What did you hunt for?
 Basic description of what you were looking for and anything special about your approach. e.g. what data set, time frame, etc 
-If readers want more detail they can read the abstract.
+If readers want more detail they can read the playbook.
 
 # What did you find?
 Were you able to disprove or prove the hypothesis? If so
