@@ -1,7 +1,7 @@
 ---
-name: 
+name: Run Playbook
 about: for tracking the progress of a hunt
-title: Execute <playbook name>
+title: Run <playbook name>
 labels: run playbook
 assignees: ''
 ---
