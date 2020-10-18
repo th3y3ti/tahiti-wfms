@@ -1,10 +1,10 @@
-## Playbooks Repo
-This directory is for storing Threat Hunting playbooks. Threat Hunting playbooks are basically the recipes for conducting Threat Hunts.
+## Backlog
+This backlog is for storing Threat Hunting abstracts. Threat Hunting abstracts are basically the recipes for conducting Threat Hunts.
 
-### Instructions for creating a new playbook
+### Instructions for creating a new abstract
 
-Open a new `create playbook` issue and then create a new branch.  
-In the new branch, copy the playbook template below, make a new playbook, paste the template into the new playbook and fill in the information.
+Open a new `create abstract` issue and then create a new branch.  
+In the new branch, copy the abstract template below, make a new abstract, paste the template into the new abstract and fill in the information.
 
 **Note:** UUID's can be generated here (https://www.uuidgenerator.net/version4).
 
@@ -29,7 +29,7 @@ What triggered the creation of this abstract?
 Reference to the trigger.
 
 ## Priority Explanation
-Priority of this playbook.
+Priority of this abstract.
 
 ## MITRE Reference(s)
 Reference (links) to attack techniques from MITRE ATT&CK.
